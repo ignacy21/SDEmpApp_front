@@ -15,6 +15,7 @@ fetch('http://localhost:7070/SDEmpApp/main-page/user', {
     .then(response => response.json())
     .then(data => {
         userData.textContent = `Hello ${data.email}`
+        localStorage.setItem('user_email', data.email);
     })
     .catch(error => {
         console.error('Error occurred during login:', error);

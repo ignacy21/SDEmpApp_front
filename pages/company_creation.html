@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Register as Company</h2>
-<form id="job_seeker_form">
+<form id="company_creation_form">
     <label for="name">name</label><br>
     <input type="text" id="name"><br>
 
@@ -19,9 +19,15 @@
     <label for="email">email</label><br>
     <input type="text" id="email"><br>
 
-    <label for="localization">localization</label><br>
-    <select id="localization"></select>
+    <label for="localization_province">province
+        <select id="localization_province"></select>
+    </label>
 
+    <label for="localization_city">city
+        <select id="localization_city"></select>
+    </label>
+    <br><br>
+    <button type="submit">create company</button>
 </form>
 
 <script src="../js/registration/company_register.js"></script>
